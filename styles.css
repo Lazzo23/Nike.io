@@ -1,0 +1,256 @@
+/* Import-anje pisav */
+@import url('https://fonts.googleapis.com/css?family=Cormorant|Josefin+Sans');
+
+/* Splošno */
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	font-family: 'Josefin Sans', sans-serif;
+	scroll-behavior: smooth;
+}
+
+h1.naslov{
+	margin-bottom: 20px;
+	color: #444444;
+	font-family: 'Cormorant';
+	text-transform: uppercase;
+	font-size: 38px;
+	word-spacing: 25px;
+	letter-spacing: 5px;
+}
+
+p{
+	margin-bottom: 15px;
+	font-size: 18px;
+	line-height: 20px;
+	color: #a9a9a9;
+}
+
+.stran{
+	position: relative;
+}
+
+.onas,
+.slika,
+.svg,
+.beizer{
+	text-align: center;
+	padding: 5% 10%;
+}
+
+/* Nav vrstica */
+.navbar{
+	width: 100%;
+	height: 65px;
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.navbar_items ul{
+	display: flex;
+}
+
+.navbar_items ul li{
+	margin: 0 10px;
+}
+
+.navbar_items ul li a{
+	text-transform: uppercase;
+	color: #fff;
+}
+
+/* Ozadje */
+.ozadje{
+	background: url('slike/bg.jpg') no-repeat top center;
+	background-size: cover;
+	width: 100%;
+	height: 600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.ozadje_content{
+	text-align: center;
+	color: #fff;
+}
+
+.ozadje_content h1{
+	text-transform: uppercase;
+	line-height: 38px;
+	margin-bottom: 15px;
+}
+
+.ozadje_content p{
+	color: #fff;
+}
+
+/* O nas */
+.btn a {
+    width: 180px;
+    height: 35px;
+    line-height: 35px;
+    border: 3px solid #ff6633;
+    color: #ff6633;
+    display: block;
+    margin: 25px auto 0;
+    text-align: center;
+}
+
+/* Slika Nike Logo */
+.slika{
+	background: #DCDCE1;
+}
+
+.slika_content {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.slika_content .slika_content_img {
+    width: 30%;
+}
+
+.slika_content .slika_content_img img {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.slika_content .slika_content_img h3 {
+    color: #ff6633;
+    margin-bottom: 15px;
+}
+
+/* SVG Nike Logo */
+#product-svg{
+	width:60%;
+}
+
+.barve {
+  display:flex;
+  width:100%;
+  justify-content:center;
+}
+
+.krog {
+  height: 50px;
+  width: 50px;
+  margin-left: 10px;
+  border-radius: 40px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+/* Beizer Nike Logo */
+.beizer{
+	background: #f5f5f5;
+}
+
+.gumb{
+	margin:0 40%;
+}
+
+#gumb{
+	width:100%;
+    display: block;
+    border: 0;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+/* Noga */
+.noga{
+	width: 100%;
+	text-align: center;
+	background: #ff6633;
+	padding: 20px 0;
+}
+
+.noga a{
+	color: #fff;
+}
+
+/* Fade-in efekt */
+.fade-in {
+  animation: fadeIn ease 2s;
+  -webkit-animation: fadeIn ease 2s;
+  -moz-animation: fadeIn ease 2s;
+  -o-animation: fadeIn ease 2s;
+  -ms-animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+}
+
+@media (max-width: 720px){
+		
+	.navbar{
+		height: auto;
+		flex-direction: column;
+	}
+
+	.navbar_items ul{
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.navbar_items ul li{
+		margin-bottom:5px;
+	}
+
+	.ozadje_content{
+		margin-top: 35px;
+	}
+}
